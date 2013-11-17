@@ -7,12 +7,6 @@
         "only_if_ssh": true
       }
     },
-    "date": {
-      "args": {
-        "istime": true,
-        "format": "%H:%M:%S %a %d"
-      }
-    },
     "virtualenv": {
       "before": "ⓔ  "
     },
@@ -50,7 +44,17 @@
         "name": "branch"
       },
       {
-        "name": "date"
+        "name": "date",
+        "args": {
+          "istime": true,
+          "format": "%H:%M:%S"
+        }
+      },
+      {
+        "name": "date",
+        "args": {
+          "format": "%a %d"
+        }
       }
     ]
   }
